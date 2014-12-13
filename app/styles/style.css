@@ -7,4 +7,6 @@
 .intro-text {
     margin-top: 20px;
 }
-.buy-apple > img {}
+button[data-toggle=collapse] {
+    margin: 10px !important;
+}
