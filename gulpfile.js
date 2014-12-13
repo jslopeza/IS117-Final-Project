@@ -40,17 +40,6 @@ var AUTOPREFIXER_BROWSERS = [
   'bb >= 10'
 ];
 
-// Optimize Images
-gulp.task('images', function () {
-  return gulp.src('app/img/**/*')
-    .pipe($.cache($.imagemin({
-      progressive: true,
-      interlaced: true
-    })))
-    .pipe(gulp.dest('dist/img'))
-    .pipe($.size({title: 'images'}));
-});
-
 // Copy All Files At The Root Level (app)
 gulp.task('copy', function () {
   return gulp.src([
@@ -157,7 +146,7 @@ gulp.task('serve:dist', ['default'], function () {
 
 // Build Production Files, the Default Task
 gulp.task('default', ['clean'], function (cb) {
-  runSequence('styles', ['html', 'images', 'fonts', 'copy'], cb);
+  runSequence('styles', ['html', 'fonts', 'copy'], cb);
 });
 
 // Run PageSpeed Insights
