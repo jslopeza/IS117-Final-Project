@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Apple I</title>
+    <title>Buy Now</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -42,15 +42,15 @@
                 <a href="./index.html" class="brand">Apple Inc.</a>
                 <div class="nav-collapse collapse">
                     <ul class="nav">
-                        <li class="active"><a href="./index.html">About Apple Inc.</a>
+                        <li><a href="./index.html ">About Apple Inc.</a>
                         </li>
-                        <li><a href="apple2.html">Apple 2</a>
+                        <li><a href="apple2.html ">Apple 2</a>
                         </li>
-                        <li><a href="apple1.html">Apple 1</a>
+                        <li><a href="apple1.html ">Apple 1</a>
                         </li>
-                        <li><a href="contact">Contact Us</a>
+                        <li><a href="contact.html ">Contact Us</a>
                         </li>
-                        <li><a href="buy.html">Buy Now!</a>
+                        <li class="active"><a href="buy.html">Buy Now!</a>
                         </li>
                     </ul>
                 </div>
@@ -59,7 +59,69 @@
     </div>
 
     <div class="intro">
-
+        <div class="page-header">
+            <h1>Which greatness would you like to buy?</h1>
+        </div>
+        <img src="img/Apple_2.png">
+        <img src="img/Apple_1.png">
+        <p class="text-muted">All Fields are required</p>
+        <form class="form-horizontal" role="form" novalidate>
+            <div class="control-group">
+                <label for="name" class="control-label">Computer</label>
+                <div class="controls">
+                    Apple ][
+                    <input type="radio" name="apple"> Apple I
+                    <input type="radio" name="apple">
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="name" class="control-label">Full Name</label>
+                <div class="controls">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="email" class="control-label">Email</label>
+                <div class="controls">
+                    <input type="email">
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="name" class="control-label">Phone</label>
+                <div class="controls">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="email" class="control-label">Street Address 1</label>
+                <div class="controls">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="name" class="control-label">Street Address 2</label>
+                <div class="controls">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="email" class="control-label">City</label>
+                <div class="controls">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="control-group">
+                <label for="name" class="control-label">Country</label>
+                <div class="controls">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <button>Submit</button>
+                </div>
+            </div>
+        </form>
     </div>
     <div class="footer">
         <div class="container">
@@ -86,7 +148,8 @@
     <script src="scripts/bootstrap-typeahead.js"></script>
     <script src="scripts/bootstrap-affix.js"></script>
     <script src="scripts/application.js"></script>
-
+    <script src="scripts/jquery.validate.js"></script>
+    <script src="scripts/app.js"></script>
     <script>
     (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
